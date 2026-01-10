@@ -14,7 +14,7 @@ const postsData = [
 function FeaturedPosts() {
     return (
         <section className="py-24 bg-white font-montserrat">
-            <div className="max-w-7xl mx-auto px-20 lg:px-12">
+            <div className="max-w-7xl mx-auto px-12 lg:px-12">
                 
                 {/* Başlık Grubu */}
                 <div className="text-center flex flex-col items-center gap-4 mb-20">
