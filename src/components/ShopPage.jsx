@@ -1,7 +1,7 @@
 import React from 'react';
-import ShopCategories from '../components/ShopCategories'; // Az önce yaptığımız kategori kartları
-import ShopProducts from '../components/ShopProducts';     // ProductCard içeren liste
-import Clients from '../components/Clients';               // Gri logo bandı (Henüz yapmadıysak aşağıda ekledim)
+import ShopCategories from '../components/ShopCategories';
+import ShopProducts from '../components/ShopProducts';     
+import Clients from '../components/Clients';              
 
 const ShopPage = () => {
     return (

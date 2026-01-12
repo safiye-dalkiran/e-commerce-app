@@ -14,9 +14,6 @@ const Clients = () => {
     return (
         <section className="bg-[#FAFAFA] py-16">
             <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-                {/* * Mobilde 1, Masaüstünde 6 sütun
-                  * opacity-50 ve grayscale ile kurumsal gri görünüm
-                */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 lg:gap-24 items-center justify-items-center opacity-50 grayscale transition-all duration-300 hover:opacity-100">
                     {logos.map((logo, index) => (
                         <i 

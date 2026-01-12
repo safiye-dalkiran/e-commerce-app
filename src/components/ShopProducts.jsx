@@ -1,9 +1,10 @@
 import React from 'react';
-import { LayoutGrid, List } from 'lucide-react'; // Lucide ikonları ekledik
+import { LayoutGrid, List } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
-
+import data from '../data.js'; 
 function ShopProducts() {
-    const products = Array.from({ length: 12 }, (_, i) => i + 1);
+   
+    const products = data.productSection;
 
     return (
         <section className="py-12 bg-white font-montserrat">
@@ -11,7 +12,9 @@ function ShopProducts() {
                 
                 {/* Filtreleme ve Sonuç Çubuğu */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
-                    <p className="text-[#737373] font-bold text-sm">Showing all 12 results</p>
+                    <p className="text-[#737373] font-bold text-sm">
+                        Showing all {products.length} results
+                    </p>
                     
                     <div className="flex items-center gap-4">
                         <span className="text-[#737373] font-bold text-sm">Views:</span>
@@ -37,22 +40,17 @@ function ShopProducts() {
                     </div>
                 </div>
 
-                {/* Ürün Izgarası */}
+                {/* Ürün Izgarası - ARTIK DİNAMİK */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 mb-20">
-                    {products.map(p => (
-                        <div key={p} className="flex justify-center">
-                            <ProductCard
-                                product={{
-                                    name: 'Graphic Design',
-                                    category: 'English Department',
-                                    image: `https://picsum.photos/300/400?random=${p + 20}`
-                                }}
-                            />
+                    {products.map(item => (
+                        <div key={item.id} className="flex justify-center">
+                            {/* DÜZELTME: Tüm objeyi (id, name, price, colors dahil) gönderiyoruz */}
+                            <ProductCard product={item} />
                         </div>
                     ))}
                 </div>
 
-                {/* Sayfalama (Pagination) - Görsele Sadık Stil */}
+                {/* Sayfalama (Pagination) */}
                 <div className="flex justify-center mt-16">
                     <div className="flex border border-[#BDBDBD] rounded-md overflow-hidden bg-white shadow-sm">
                         <button className="px-6 py-4 text-[#BDBDBD] font-bold border-r border-[#BDBDBD] hover:bg-[#F3F3F3] transition-colors">First</button>

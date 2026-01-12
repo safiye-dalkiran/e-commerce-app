@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import HomePage from './components/HomePage'
 import ShopPage from './components/ShopPage';
 import ProductDetail from './components/ProductDetail';
+import Contact from './components/Contact';
+import Team from './components/Team';
 
 // PageContent Bileşeni
 const PageContent = ({ children }) => {
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/shop/:productId" element={<ProductDetail />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/team" element={<Team />} />
 
         </Routes>
       </PageContent>
