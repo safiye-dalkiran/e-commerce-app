@@ -1,0 +1,245 @@
+{
+    "info": {
+        "_postman_id": "e-commerce-api-collection",
+        "name": "E-Commerce API",
+        "description": "API collection for Workintech E-Commerce Project",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get Roles",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://workintech-fe-ecommerce.onrender.com/roles",
+                    "protocol": "https",
+                    "host": [
+                        "workintech-fe-ecommerce",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "roles"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Signup (Customer)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Test Customer\",\n    \"email\": \"customer@test.com\",\n    \"password\": \"Password123!\",\n    \"role_id\": \"3\"\n}"
+                },
+                "url": {
+                    "raw": "https://workintech-fe-ecommerce.onrender.com/signup",
+                    "protocol": "https",
+                    "host": [
+                        "workintech-fe-ecommerce",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "signup"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Signup (Store)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"Store Admin\",\n    \"email\": \"store@test.com\",\n    \"password\": \"Password123!\",\n    \"role_id\": \"2\",\n    \"store\": {\n        \"name\": \"My Super Store\",\n        \"phone\": \"+905551234567\",\n        \"tax_no\": \"T1234V123456\",\n        \"bank_account\": \"TR12345678901234567890123456\"\n    }\n}"
+                },
+                "url": {
+                    "raw": "https://workintech-fe-ecommerce.onrender.com/signup",
+                    "protocol": "https",
+                    "host": [
+                        "workintech-fe-ecommerce",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "signup"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Login (Customer)",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"email\": \"customer@commerce.com\",\n    \"password\": \"123456\",\n    \"remember\": true\n}"
+                },
+                "url": {
+                    "raw": "https://workintech-fe-ecommerce.onrender.com/login",
+                    "protocol": "https",
+                    "host": [
+                        "workintech-fe-ecommerce",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Categories",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://workintech-fe-ecommerce.onrender.com/categories",
+                    "protocol": "https",
+                    "host": [
+                        "workintech-fe-ecommerce",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "categories"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Products",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://workintech-fe-ecommerce.onrender.com/products",
+                    "protocol": "https",
+                    "host": [
+                        "workintech-fe-ecommerce",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "products"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Products (Filtered)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://workintech-fe-ecommerce.onrender.com/products?category=1&sort=price:asc&filter=shirt",
+                    "protocol": "https",
+                    "host": [
+                        "workintech-fe-ecommerce",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "products"
+                    ],
+                    "query": [
+                        {
+                            "key": "category",
+                            "value": "1"
+                        },
+                        {
+                            "key": "sort",
+                            "value": "price:asc"
+                        },
+                        {
+                            "key": "filter",
+                            "value": "shirt"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Products (Pagination)",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://workintech-fe-ecommerce.onrender.com/products?limit=25&offset=25",
+                    "protocol": "https",
+                    "host": [
+                        "workintech-fe-ecommerce",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "products"
+                    ],
+                    "query": [
+                        {
+                            "key": "limit",
+                            "value": "25"
+                        },
+                        {
+                            "key": "offset",
+                            "value": "25"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Single Product",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://workintech-fe-ecommerce.onrender.com/products/322",
+                    "protocol": "https",
+                    "host": [
+                        "workintech-fe-ecommerce",
+                        "onrender",
+                        "com"
+                    ],
+                    "path": [
+                        "products",
+                        "322"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}

@@ -17,11 +17,19 @@ import foto6 from "./images/team/foto6.jpg"
 import foto7 from "./images/team/foto7.jpg"
 import foto8 from "./images/team/foto8.jpg"
 
+import görsel1 from "./images/team/görsel1.jpg"
+import görsel2 from "./images/team/görsel2.jpg"
+import görsel3 from "./images/team/görsel3.jpg"
+import görsel4 from "./images/team/görsel4.jpg"
+import görsel5 from "./images/team/görsel5.jpg"
+
+
 
 
 const data = {
 
   // 1. Kategoriler (Dropdown için)
+  teamGallery: [görsel1, görsel2, görsel3, görsel4, görsel5],
   shopCategories: {
     kadin: [
       { id: "k1", name: "Bags", path: "/shop/kadin-bags" },
@@ -197,23 +205,24 @@ const data = {
   teamMembers: [
     {
       id: 1,
-      name: "Gökhan Özdemir",
-      role: "Project Manager",
-      image: foto4,
+      name: "Safiye Dalkıran",
+      role: "Full Stack Developer",
+      image: profile,
       company: "Bandage",
       socials: { facebook: "#", instagram: "#", twitter: "#" }
     },
     {
       id: 2,
-      name: "Safiye Dalkıran", 
-      role: "Full Stack Developer",
-      image:profile,
+      name: "Robert Fox",
+      role: "Garfunkel",
+      image: foto4,
       company: "Bandage",
       socials: { facebook: "#", instagram: "#", twitter: "#" }
     },
+
     {
       id: 3,
-      name: "Robert Fox",
+      name: "Leslie Alexander",
       role: "IBM",
       image: foto1,
       company: "Google",
@@ -231,7 +240,7 @@ const data = {
       id: 5,
       name: "Brooklyn Simmons",
       role: "eBay",
-      image:foto5,
+      image: foto5,
       company: "eBay",
       socials: { facebook: "#", instagram: "#", twitter: "#" }
     },
@@ -260,6 +269,70 @@ const data = {
       socials: { facebook: "#", instagram: "#", twitter: "#" }
     }
   ]
+};
+// data.js dosyanın sonuna ekle
+export const pricingPlans = [
+  {
+    id: 1,
+    title: "FREE",
+    description: "Organize across all apps by hand",
+    price: "0",
+    features: [
+      { text: "Unlimited product updates", included: true },
+      { text: "Unlimited product updates", included: true },
+      { text: "Unlimited product updates", included: true },
+      { text: "1GB Cloud storage", included: false },
+      { text: "Email and community support", included: false },
+    ],
+    buttonText: "Try for free",
+    isPopular: false
+  },
+  {
+    id: 2,
+    title: "STANDARD",
+    description: "Organize across all apps by hand",
+    price: "9.99",
+    features: [
+      { text: "Unlimited product updates", included: true },
+      { text: "Unlimited product updates", included: true },
+      { text: "Unlimited product updates", included: true },
+      { text: "1GB Cloud storage", included: true },
+      { text: "Email and community support", included: false },
+    ],
+    buttonText: "Try for free",
+    isPopular: true
+  },
+  {
+    id: 3,
+    title: "PREMIUM",
+    description: "Organize across all apps by hand",
+    price: "19.99",
+    features: [
+      { text: "Unlimited product updates", included: true },
+      { text: "Unlimited product updates", included: true },
+      { text: "Unlimited product updates", included: true },
+      { text: "1GB Cloud storage", included: true },
+      { text: "Email and community support", included: true },
+    ],
+    buttonText: "Try for free",
+    isPopular: false
+  }
+];
+
+export const pricingFAQs = [
+  { id: 1, q: "the quick fox jumps over the lazy dog", a: "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie." },
+  { id: 2, q: "the quick fox jumps over the lazy dog", a: "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie." },
+  { id: 3, q: "the quick fox jumps over the lazy dog", a: "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie." },
+  { id: 4, q: "the quick fox jumps over the lazy dog", a: "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie." },
+  { id: 5, q: "the quick fox jumps over the lazy dog", a: "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie." },
+  { id: 6, q: "the quick fox jumps over the lazy dog", a: "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie." },
+];
+// data.js içine ekle veya güncelle
+export const aboutVideo = {
+  title: "Designing Better Experience",
+  description: "Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics",
+  coverImage: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1440&auto=format&fit=crop", // Tasarımdaki pembe tonlu benzer görsel
+  videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 };
 
 export default data;
