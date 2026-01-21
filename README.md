@@ -1,16 +1,112 @@
-# React + Vite
+# 👑 Bandage — Trend Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Bandage Banner](public/favicon3.png)
 
-Currently, two official plugins are available:
+## 📖 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Bandage** is a modern, full-featured **e-commerce platform** built with contemporary web technologies. It delivers a smooth and secure shopping experience, allowing users to browse products, apply filters, manage their cart, and complete orders with ease.
 
-## React Compiler
+The project is developed on top of the **React ecosystem** and leverages **Redux** for robust and scalable state management. With a fully responsive design, Bandage performs seamlessly across **mobile, tablet, and desktop** devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **🛒 Advanced Cart Management**
+  Add, remove, and update products with real-time price calculations powered by **Redux** and **LocalStorage**.
+
+* **🔐 Secure Authentication**
+  JWT-based Login & Signup flow with a **“Remember Me”** option for persistent sessions.
+
+* **📱 Fully Responsive UI**
+  Built with **Tailwind CSS**, optimized for every screen size.
+
+* **🔍 Smart Filtering & Search**
+  Browse products by category, price range, and rating.
+
+* **💳 Order Flow Simulation**
+  Address management and checkout experience designed to mirror real-world e-commerce flows.
+
+* **🌍 Gravatar Integration**
+  Automatically displays user profile images based on email address.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React (v19)
+* **Styling:** Tailwind CSS (Utility‑First)
+* **State Management:** Redux & Redux Thunk
+* **Routing:** React Router DOM (SPA)
+* **HTTP Client:** Axios with Interceptors (Token handling)
+* **Forms & Validation:** React Hook Form
+* **Notifications:** React Toastify
+* **Icons:** FontAwesome & Lucide React
+
+---
+
+## 🚀 Getting Started
+
+Follow the steps below to run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/bandage-ecommerce.git
+cd bandage-ecommerce
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── api/            # Axios configuration & interceptors
+├── components/     # Reusable UI components
+│   ├── Home/
+│   ├── Shop/
+│   ├── Order/
+│   └── Common/
+├── layout/         # Layout components (Header, Footer)
+├── pages/          # Route-based pages
+├── store/          # Redux logic
+│   ├── actions/
+│   └── reducers/
+└── images/         # Static assets & images
+```
+
+---
+
+## 🔮 Future Improvements
+
+* [ ] Admin Dashboard (Product CRUD operations)
+* [ ] Multi-language Support (i18n)
+* [ ] Dark Mode
+* [ ] Wishlist / Favorites Feature
+
+---
+
+### 👩‍💻 Developed by
+
+**Safiye Dalkıran** — 2026
+
+> *Bandage is designed as a clean, scalable, and modern e-commerce experience, focusing on usability, performance, and maintainable architecture.*
