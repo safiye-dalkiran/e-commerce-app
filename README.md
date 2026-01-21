@@ -1,6 +1,6 @@
 # 👑 Bandage — Trend Shop
 
-![Bandage Banner](public/favicon3.png)
+                                   ![Bandage Banner](public/favicon3.png)
 
 ## 📖 About the Project
 
