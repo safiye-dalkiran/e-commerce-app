@@ -1,7 +1,5 @@
 # 👑 Bandage — Trend Shop
 
-  ![Bandage Banner](public/favicon3.png)
-
 ## 📖 About the Project
 
 **Bandage** is a modern, full-featured **e-commerce platform** built with contemporary web technologies. It delivers a smooth and secure shopping experience, allowing users to browse products, apply filters, manage their cart, and complete orders with ease.
